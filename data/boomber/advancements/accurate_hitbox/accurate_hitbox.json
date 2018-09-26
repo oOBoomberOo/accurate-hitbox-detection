@@ -1,0 +1,17 @@
+{
+	"display": {
+		"title": "Boomber's Accurate Hitbox Detection v0.1",
+		"description": "",
+		"icon": {
+			"item": "minecraft:creeper_head"
+		},
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "boomber:boomber",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

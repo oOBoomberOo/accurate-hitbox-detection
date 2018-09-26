@@ -1,0 +1,21 @@
+{
+	"values": [
+		"minecraft:air",
+		"minecraft:cave_air",
+		"minecraft:void_air",
+		"minecraft:grass",
+		"#minecraft:carpets",
+		"minecraft:ladder",
+		"minecraft:nether_portal",
+		"minecraft:torch",
+		"minecraft:wall_torch",
+		"minecraft:redstone_torch",
+		"minecraft:redstone_wall_torch",
+		"minecraft:water",
+		"minecraft:lava",
+		"minecraft:black_stained_glass",
+		"minecraft:command_block",
+		"#minecraft:saplings",
+		"#minecraft:buttons"
+	]
+}
