@@ -1,0 +1,28 @@
+{
+  "values": [
+    "minecraft:air",
+    "minecraft:void_air",
+    "minecraft:cave_air",
+    "minecraft:water",
+    "minecraft:bubble_column",
+    "minecraft:lava",
+    "#boomber:accurate_hitbox/transparent_plants",
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:ladder",
+    "#minecraft:banners",
+    "minecraft:cobweb",
+    "minecraft:sign",
+    "minecraft:wall_sign",
+    "minecraft:lever",
+    "#minecraft:buttons",
+    "#minecraft:wooden_pressure_plates",
+    "minecraft:stone_pressure_plate",
+    "minecraft:light_weighted_pressure_plate",
+    "minecraft:heavy_weighted_pressure_plate",
+    "minecraft:redstone_wire",
+    "#minecraft:rails",
+    "minecraft:tripwire",
+    "#minecraft:carpets"
+  ]
+}

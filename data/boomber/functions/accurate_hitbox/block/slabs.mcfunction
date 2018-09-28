@@ -1,0 +1,3 @@
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs[type=bottom] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..80 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs[type=top] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 80..160 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs[type=double] run tag @s add boomber.accurate_hitbox.hit

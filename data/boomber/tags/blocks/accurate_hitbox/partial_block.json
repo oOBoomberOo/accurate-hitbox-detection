@@ -1,0 +1,13 @@
+{
+	"values": [
+		"#boomber:accurate_hitbox/partial_block/flower_pot",
+		"#boomber:accurate_hitbox/partial_block/stairs",
+		"#boomber:accurate_hitbox/partial_block/slabs",
+		"#boomber:accurate_hitbox/partial_block/doors",
+		"#boomber:accurate_hitbox/partial_block/fence",
+		"#boomber:accurate_hitbox/partial_block/anvil",
+		"#boomber:accurate_hitbox/partial_block/wall",
+		"#boomber:accurate_hitbox/partial_block/bars",
+		"#boomber:accurate_hitbox/partial_block/trapdoor"
+	]
+}
