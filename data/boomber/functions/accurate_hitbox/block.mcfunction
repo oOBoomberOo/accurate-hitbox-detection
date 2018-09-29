@@ -23,4 +23,14 @@ execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/wall run fun
 execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/bars run function boomber:accurate_hitbox/block/bars
 execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs run function boomber:accurate_hitbox/block/stairs
 execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/trapdoor run function boomber:accurate_hitbox/block/trapdoor
-
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/brewing_stand run function boomber:accurate_hitbox/block/brewing_stand
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/redstone_repeater run function boomber:accurate_hitbox/block/brewing_stand
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/daylight_sensor run function boomber:accurate_hitbox/block/daylight_sensor
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/comparator run function boomber:accurate_hitbox/block/comparator
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/piston run function boomber:accurate_hitbox/block/piston
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/hopper run function boomber:accurate_hitbox/block/hopper
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/bed run function boomber:accurate_hitbox/block/bed
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/cake run function boomber:accurate_hitbox/block/cake
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/enchanting_table run function boomber:accurate_hitbox/block/enchanting_table
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow run function boomber:accurate_hitbox/block/snow
+execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/end_portal_frame run function boomber:accurate_hitbox/block/end_portal_frame

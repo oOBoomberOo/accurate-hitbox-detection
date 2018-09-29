@@ -8,6 +8,17 @@
 		"#boomber:accurate_hitbox/partial_block/anvil",
 		"#boomber:accurate_hitbox/partial_block/wall",
 		"#boomber:accurate_hitbox/partial_block/bars",
-		"#boomber:accurate_hitbox/partial_block/trapdoor"
+		"#boomber:accurate_hitbox/partial_block/trapdoor",
+		"#boomber:accurate_hitbox/partial_block/brewing_stand",
+		"#boomber:accurate_hitbox/partial_block/redstone_repeater",
+		"#boomber:accurate_hitbox/partial_block/daylight_sensor",
+		"#boomber:accurate_hitbox/partial_block/comparator",
+		"#boomber:accurate_hitbox/partial_block/piston",
+		"#boomber:accurate_hitbox/partial_block/hopper",
+		"#boomber:accurate_hitbox/partial_block/bed",
+		"#boomber:accurate_hitbox/partial_block/cake",
+		"#boomber:accurate_hitbox/partial_block/enchanting_table",
+		"#boomber:accurate_hitbox/partial_block/snow",
+		"#boomber:accurate_hitbox/partial_block/end_portal_frame"
 	]
 }
