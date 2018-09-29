@@ -1,5 +1,5 @@
 # Accurate Hitbox Detection
-A simple datapack library for detecting if one entity is colliding with another entity  
+A simple datapack library for detecting if one entity is colliding with another entity and with v0.2 it can accurately detect hitblock of blocks! (stairs, door, fence, hopper, etc...)  
 P.S. this datapack is made to completely ignore hitbox of any kind of projectile. if you want to detect projectile colliding with other projectile you have to use other library
 
 # How to use
