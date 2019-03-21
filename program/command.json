@@ -1,0 +1,23 @@
+{
+	"block": {
+		"start": "execute as @s[scores={bb.success=0}] if block ~ ~ ~ <block>",
+		"bound": [ 
+			"if score #bb.acc_hit.bound.x bb.calculation matches <bound>",
+			"if score #bb.acc_hit.bound.y bb.calculation matches <bound>",
+			"if score #bb.acc_hit.bound.z bb.calculation matches <bound>"
+		],
+		"end": "run scoreboard players set @s bb.success 1"
+	},
+	"matrix_map": {
+		"facing": {
+			"east": [1, 2, 3],
+			"north": [3, 2, -1],
+			"west": [-1, 2, -3],
+			"south": [-3, 2, 1]
+		},
+		"half": {
+			"top": [1, -2, 3],
+			"bottom": [1, 2, 3]
+		}
+	}
+}

@@ -1,8 +1,0 @@
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=1] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..20 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=2] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..40 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=3] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..60 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=4] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..80 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=5] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..100 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=6] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..120 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=7] if score @s bb.bPosX matches 0..160 if score @s bb.bPosY matches 0..140 if score @s bb.bPosZ matches 0..160 run tag @s add boomber.accurate_hitbox.hit
-execute as @s if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/snow[layers=8] run tag @s add boomber.accurate_hitbox.hit

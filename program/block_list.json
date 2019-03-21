@@ -1,0 +1,6 @@
+{
+	"values": [
+		{"name": "stairs", "id": "#minecraft:stairs", "model": "./models/stairs.json", "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}},
+		{"name": "inner_stairs", "id": "#minecraft:stairs", "model": "./models/inner_stairs.json", "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}}
+	]
+}

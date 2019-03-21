@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:item",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Test Projectile - Accurate Hitbox",
+								"color": "aqua",
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{ucit:{id:\"test_projectile\", from:\"boomber:accurate_hitbox\", author:[\"boomber\"]}}"
+						}
+					],
+					"name": "minecraft:carrot_on_a_stick"
+				}
+			]
+		}
+	]
+}
