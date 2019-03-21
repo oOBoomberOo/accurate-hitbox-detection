@@ -1,6 +1,11 @@
 {
 	"values": [
-		{"name": "stairs", "id": "#minecraft:stairs", "model": "./models/stairs.json", "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}},
-		{"name": "inner_stairs", "id": "#minecraft:stairs", "model": "./models/inner_stairs.json", "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}}
+		{"out": "stairs/straight", "id": "#boomber:accurate_hitbox/partial_block/stairs", "model": "./models/stairs/straight.json", "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}},
+		{"out": "stairs/inner_right", "id": "#boomber:accurate_hitbox/partial_block/stairs", "model": "./models/stairs/inner_stairs.json", "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}},
+		{"out": "stairs/inner_left", "id": "#boomber:accurate_hitbox/partial_block/stairs", "model": "./models/stairs/inner_stairs.json", "rotation": [3, 2, -1], "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}},
+		{"out": "stairs/outer_right", "id": "#boomber:accurate_hitbox/partial_block/stairs", "model": "./models/stairs/outer_stairs.json", "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}},
+		{"out": "stairs/outer_left", "id": "#boomber:accurate_hitbox/partial_block/stairs", "model": "./models/stairs/outer_stairs.json", "rotation": [3, 2, -1], "block_state": {"facing": ["east", "west", "north", "south"], "half": ["top", "bottom"]}},
+		{"out": "slabs/slab", "id": "#boomber:accurate_hitbox/partial_block/slabs", "model": "./models/slabs/slab.json", "block_state": {"type": ["top", "bottom"]}},
+		{"out": "anvil/anvil", "id": "#boomber:accurate_hitbox/partial_block/anvil", "model": "./models/anvil/anvil.json", "rotation": [3, 2, -1], "block_state": {"facing": ["east", "west", "north", "south"]}}
 	]
 }

@@ -11,18 +11,23 @@ def check_path(path):
 def create_file(path):
 	return open(check_path(path), 'w')
 
+def custom_rotation(part, matrix):
+	result = [[0, 0, 0], [0, 0, 0]]
+	for i in range(len(matrix)):
+		if matrix[i] > 0:
+			result[0][i] = part[0][matrix[i] - 1]
+			result[1][i] = part[1][matrix[i] - 1]
+		elif matrix[i] < 0:
+			result[0][i] = -part[0][-matrix[i] - 1]
+			result[1][i] = -part[1][-matrix[i] - 1]
+	return result
+
 def rotate(part, block_state):
 	result = [[0, 0, 0], [0, 0, 0]]
 	for (name, state) in zip(block_state[0], block_state[1]):
 		if name in command['matrix_map'] and state in command['matrix_map'][name]:
 			matrix = command['matrix_map'][name][state]
-			for i in range(len(matrix)):
-				if matrix[i] > 0:
-					result[0][i] = part[0][matrix[i] - 1]
-					result[1][i] = part[1][matrix[i] - 1]
-				elif matrix[i] < 0:
-					result[0][i] = -part[0][-matrix[i] - 1]
-					result[1][i] = -part[1][-matrix[i] - 1]
+			result = custom_rotation(part, matrix)
 			part = result
 	
 	# if n < 0:
@@ -46,6 +51,7 @@ def calculate(model, permut_name, permut_state, block):
 		for i in range(3):
 			re_order = {rotated_part[0][i] * 10, rotated_part[1][i] * 10}
 			if not (re_order - {0, 160}) == set():
+				re_order = sorted(re_order)
 				line.append(command['block']['bound'][i].replace('<bound>', '..'.join([str(x) for x in re_order])))
 		line.append(command['block']['end'])
 		result.append(' '.join(line))
@@ -63,11 +69,16 @@ def accurate_hitbox():
 			permut_states['state'].append(temp)
 			permut_states['name'].append(state)
 		model = [[x['from'], x['to']] for x in json.load(open(block['model']))['elements']]
-		
+		if 'rotation' in block:
+			temp = []
+			for part in model:
+				temp.append(custom_rotation(part, block['rotation']))
+			model = temp
 		for permut_state in itertools.product(*permut_states['state']):
-			result.append(calculate(copy.deepcopy(model), tuple(permut_states['name']), permut_state, block))
+			r = calculate(copy.deepcopy(model), tuple(permut_states['name']), permut_state, block)
+			result.append(r)
 
-		with create_file('./output/' + block['name'] + '.mcfunction') as f:
+		with create_file('./output/' + block['out'] + '.mcfunction') as f:
 			f.write('\n'.join(result))
 
 command = json.load(open('command.json'))

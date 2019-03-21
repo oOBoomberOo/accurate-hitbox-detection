@@ -17,6 +17,11 @@ scoreboard players operation #bb.acc_hit.bound.y bb.calculation -= #bb.acc_hit.b
 scoreboard players operation #bb.acc_hit.bound.z bb.calculation -= #bb.acc_hit.block.z bb.calculation
 
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=straight] run function boomber:accurate_hitbox/block/stairs/straight
+execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=inner_right] run function boomber:accurate_hitbox/block/stairs/inner_right
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=inner_left] run function boomber:accurate_hitbox/block/stairs/inner_left
+execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=outer_right] run function boomber:accurate_hitbox/block/stairs/outer_right
+execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=outer_left] run function boomber:accurate_hitbox/block/stairs/outer_left
+execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs run function boomber:accurate_hitbox/block/slabs/slab
+execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/anvil run function boomber:accurate_hitbox/block/anvil/anvil
 
 execute as @s[scores={bb.success=1}] run tag @s add boomber.accurate_hitbox.hit
