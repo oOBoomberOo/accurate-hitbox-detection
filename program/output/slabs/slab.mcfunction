@@ -1,2 +1,0 @@
-execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs[type=top] if score #bb.acc_hit.bound.y bb.calculation matches 80..160 run scoreboard players set @s bb.success 1
-execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs[type=bottom] if score #bb.acc_hit.bound.y bb.calculation matches 0..80 run scoreboard players set @s bb.success 1

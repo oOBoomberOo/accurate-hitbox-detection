@@ -78,8 +78,20 @@ def accurate_hitbox():
 			r = calculate(copy.deepcopy(model), tuple(permut_states['name']), permut_state, block)
 			result.append(r)
 
-		with create_file('./output/' + block['out'] + '.mcfunction') as f:
+		with create_file('./output/block/' + block['out'] + '.mcfunction') as f:
 			f.write('\n'.join(result))
+	
+	entity_list = json.load(open('entity_list.json'))
+	for key in entity_list:
+		entity = entity_list[key]
+		lines = [command['entity']['start']]
+		for axis in command['entity']['bound']:
+			bound = '..'.join([str(-entity[axis] // 2), str(entity[axis] // 2)])
+			lines.append(command['entity']['bound'][axis].replace('<bound>', bound))
+		lines.append(command['entity']['end'])
 
+		with create_file('./output/entity/' + key + '.mcfunction') as f:
+			f.write(' '.join(lines))
+		
 command = json.load(open('command.json'))
 accurate_hitbox()

@@ -23,5 +23,14 @@
 			"top": [1, -2, 3],
 			"bottom": [1, 2, 3]
 		}
+	},
+	"entity": {
+		"start": "execute as @s",
+		"bound": {
+			"x": "if score #bb.acc_hit.bound.x bb.calculation matches <bound>",
+			"y": "if score #bb.acc_hit.bound.y bb.calculation matches <bound>",
+			"z": "if score #bb.acc_hit.bound.z bb.calculation matches <bound>"
+		},
+		"end": "run scoreboard players set #bb.acc_hit.success bb.success 1"
 	}
 }

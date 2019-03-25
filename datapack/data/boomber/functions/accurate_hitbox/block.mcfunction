@@ -21,7 +21,7 @@ execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/par
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=inner_left] run function boomber:accurate_hitbox/block/stairs/inner_left
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=outer_right] run function boomber:accurate_hitbox/block/stairs/outer_right
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/stairs[shape=outer_left] run function boomber:accurate_hitbox/block/stairs/outer_left
-execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs run function boomber:accurate_hitbox/block/slabs/slab
+execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs unless block ~ ~ ~ #boomber:accurate_hitbox/partial_block/slabs[type=double] run function boomber:accurate_hitbox/block/slabs/slab
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ #boomber:accurate_hitbox/partial_block/anvil run function boomber:accurate_hitbox/block/anvil/anvil
 
 execute as @s[scores={bb.success=1}] run tag @s add boomber.accurate_hitbox.hit
